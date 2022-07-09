@@ -4,6 +4,7 @@
   padding: 0;
   font-size: 16px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
 }
 
 /**** Color variables ****/
@@ -17,6 +18,7 @@
 
 body {
   background-color: var(--basic-white);
+  margin-bottom: 100px;
 }
 
 /***** Typography ******/
@@ -40,11 +42,63 @@ h4 {
 }
 
 /**** Container *****/
+div.container{
+  width: 100vw; 
+  padding: 20px;
+}
+div.container input{
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px --primary-blue;
+  
+}
+
 
 /***** Header ******/
 
 /***** Navbar styles ****/
+nav {
+  width: 100vw;
+  padding: 20px;
+  background-color: var(--basic-white);
+  position: fixed;
+  bottom:0;
+}
+nav ul{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav ul li img{
+  width: 50px;
+  
+}
+
 
 /***** Card styles ****/
+article.card {
+  background-color: var(--primary-orange);
+  width: 100%;
+  padding: 20px, 15px;
+  border-radius: 10px;
+  margin-top: 10px;
+  
+ 
+}
+article.card > img {
+  width: 100%;
+  margin: 10px, 0px;
+  
+}
+article.card  > button {
+  background-color: var(--primary-blue);
+  color: var(--basic-white);
+  margin: 0%;
+  padding: 10px, 20px;
+  border-radius: 10px;
+  border: none;
+}
+
 
 /******* Search input *******/
